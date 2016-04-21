@@ -11,6 +11,4 @@ The back end of this application uses a MySQL database. There is a table for eac
 ## API
 The API in this application consists of several PHP files. HLFP.php is the main API file to which the front end makes AJAX calls. The rest of the files include several ORM layers to represent different tables in the database and abstract the logic to retrieve those items. All AJAX calls to the API will return a JSON object.
 
-The API uses extra path info to determine what objects to return. It operates on the following format:
-"HLFP.php/<return type>/<filter type>/<filter value>"
-For example, "HLFP.php/class/department/5" will return all the classes in the department with an id of 5. More examples can be seen in the comments in HLFP.php.
+The API uses extra path info to determine what objects to return. It operates on the following format: "HLFP.php/(return type)/(filter type)/(filter value)". For example, "HLFP.php/class/department/5" will return all the classes in the department with an id of 5. More examples can be seen in the comments in HLFP.php.
